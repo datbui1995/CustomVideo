@@ -14,6 +14,11 @@
 		E8AA08EC24AA638200CC99E2 /* CustomVideo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8AA08EA24AA638200CC99E2 /* CustomVideo.xcdatamodeld */; };
 		E8AA08EE24AA638300CC99E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8AA08ED24AA638300CC99E2 /* Assets.xcassets */; };
 		E8AA08F124AA638300CC99E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8AA08EF24AA638300CC99E2 /* LaunchScreen.storyboard */; };
+		E8AA08FC24AA63B300CC99E2 /* CustomNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA08FB24AA63B300CC99E2 /* CustomNavigationViewController.swift */; };
+		E8AA08FF24AA63C500CC99E2 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA08FD24AA63C500CC99E2 /* VideoViewController.swift */; };
+		E8AA090024AA63C500CC99E2 /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8AA08FE24AA63C500CC99E2 /* VideoViewController.xib */; };
+		E8AA090224AA63CB00CC99E2 /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA090124AA63CB00CC99E2 /* Extension+ViewController.swift */; };
+		E8AA090424AA63D000CC99E2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA090324AA63D000CC99E2 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		E8AA08ED24AA638300CC99E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8AA08F024AA638300CC99E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8AA08F224AA638300CC99E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8AA08FB24AA63B300CC99E2 /* CustomNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewController.swift; sourceTree = "<group>"; };
+		E8AA08FD24AA63C500CC99E2 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		E8AA08FE24AA63C500CC99E2 /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		E8AA090124AA63CB00CC99E2 /* Extension+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
+		E8AA090324AA63D000CC99E2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,9 @@
 		E8AA08E024AA638200CC99E2 /* CustomVideo */ = {
 			isa = PBXGroup;
 			children = (
+				E8AA08FA24AA639F00CC99E2 /* Extension */,
+				E8AA08F924AA639400CC99E2 /* ViewController */,
+				E8AA08F824AA638C00CC99E2 /* Base */,
 				E8AA08E124AA638200CC99E2 /* AppDelegate.swift */,
 				E8AA08E324AA638200CC99E2 /* SceneDelegate.swift */,
 				E8AA08E524AA638200CC99E2 /* ViewController.swift */,
@@ -68,6 +81,32 @@
 				E8AA08EA24AA638200CC99E2 /* CustomVideo.xcdatamodeld */,
 			);
 			path = CustomVideo;
+			sourceTree = "<group>";
+		};
+		E8AA08F824AA638C00CC99E2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E8AA090324AA63D000CC99E2 /* BaseViewController.swift */,
+				E8AA08FB24AA63B300CC99E2 /* CustomNavigationViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E8AA08F924AA639400CC99E2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8AA08FD24AA63C500CC99E2 /* VideoViewController.swift */,
+				E8AA08FE24AA63C500CC99E2 /* VideoViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E8AA08FA24AA639F00CC99E2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E8AA090124AA63CB00CC99E2 /* Extension+ViewController.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +169,7 @@
 			files = (
 				E8AA08F124AA638300CC99E2 /* LaunchScreen.storyboard in Resources */,
 				E8AA08EE24AA638300CC99E2 /* Assets.xcassets in Resources */,
+				E8AA090024AA63C500CC99E2 /* VideoViewController.xib in Resources */,
 				E8AA08E924AA638200CC99E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8AA090224AA63CB00CC99E2 /* Extension+ViewController.swift in Sources */,
 				E8AA08E624AA638200CC99E2 /* ViewController.swift in Sources */,
+				E8AA08FC24AA63B300CC99E2 /* CustomNavigationViewController.swift in Sources */,
+				E8AA08FF24AA63C500CC99E2 /* VideoViewController.swift in Sources */,
 				E8AA08E224AA638200CC99E2 /* AppDelegate.swift in Sources */,
+				E8AA090424AA63D000CC99E2 /* BaseViewController.swift in Sources */,
 				E8AA08EC24AA638200CC99E2 /* CustomVideo.xcdatamodeld in Sources */,
 				E8AA08E424AA638200CC99E2 /* SceneDelegate.swift in Sources */,
 			);
