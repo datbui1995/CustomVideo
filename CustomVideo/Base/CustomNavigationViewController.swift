@@ -12,6 +12,7 @@ class CustomNavigationViewController: UINavigationController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.makeTransparent()
   }
   
   func makeTransparent() {
