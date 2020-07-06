@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E80A2B6C24B39A83004797E2 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A2B6B24B39A83004797E2 /* Extension+UIView.swift */; };
+		E80A2B6F24B3A05A004797E2 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A2B6E24B3A05A004797E2 /* AppColor.swift */; };
 		E8AA08E224AA638200CC99E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA08E124AA638200CC99E2 /* AppDelegate.swift */; };
 		E8AA08E424AA638200CC99E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA08E324AA638200CC99E2 /* SceneDelegate.swift */; };
 		E8AA08E624AA638200CC99E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA08E524AA638200CC99E2 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E80A2B6B24B39A83004797E2 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		E80A2B6E24B3A05A004797E2 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		E8AA08DE24AA638200CC99E2 /* CustomVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AA08E124AA638200CC99E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8AA08E324AA638200CC99E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E80A2B6D24B39D0F004797E2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E80A2B6E24B3A05A004797E2 /* AppColor.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		E8AA08D524AA638200CC99E2 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +80,7 @@
 		E8AA08E024AA638200CC99E2 /* CustomVideo */ = {
 			isa = PBXGroup;
 			children = (
+				E80A2B6D24B39D0F004797E2 /* Common */,
 				E8AA08FA24AA639F00CC99E2 /* Extension */,
 				E8AA08F924AA639400CC99E2 /* ViewController */,
 				E8AA08F824AA638C00CC99E2 /* Base */,
@@ -105,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E8AA090124AA63CB00CC99E2 /* Extension+ViewController.swift */,
+				E80A2B6B24B39A83004797E2 /* Extension+UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -182,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8AA090224AA63CB00CC99E2 /* Extension+ViewController.swift in Sources */,
+				E80A2B6F24B3A05A004797E2 /* AppColor.swift in Sources */,
 				E8AA08E624AA638200CC99E2 /* ViewController.swift in Sources */,
 				E8AA08FC24AA63B300CC99E2 /* CustomNavigationViewController.swift in Sources */,
 				E8AA08FF24AA63C500CC99E2 /* VideoViewController.swift in Sources */,
@@ -189,6 +204,7 @@
 				E8AA090424AA63D000CC99E2 /* BaseViewController.swift in Sources */,
 				E8AA08EC24AA638200CC99E2 /* CustomVideo.xcdatamodeld in Sources */,
 				E8AA08E424AA638200CC99E2 /* SceneDelegate.swift in Sources */,
+				E80A2B6C24B39A83004797E2 /* Extension+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

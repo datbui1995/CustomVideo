@@ -19,7 +19,7 @@ class VideoViewController: BaseViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    configUI()
     captureSession = AVCaptureSession()
     captureSession.sessionPreset = .medium
     guard let backCamera = AVCaptureDevice.default(for: .video) else { return }
@@ -36,6 +36,10 @@ class VideoViewController: BaseViewController {
     } catch let err {
       print("Error Unable to initialize back camera:  \(err.localizedDescription)")
     }
+  }
+  
+  private func configUI() {
+    btnCamera.fullBorderShadow(radius: 10, offSet: .zero, opacity: 0.8, color: AppColor.purple)
   }
   
   override func viewWillDisappear(_ animated: Bool) {

@@ -21,25 +21,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-hj-Yuc">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="678"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m5-BI-2In">
-                    <rect key="frame" x="132" y="712" width="150" height="150"/>
+                    <rect key="frame" x="167" y="752" width="80" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="150" id="9z8-vL-pLB"/>
-                        <constraint firstAttribute="height" constant="150" id="cp6-9v-ijK"/>
+                        <constraint firstAttribute="width" constant="80" id="9z8-vL-pLB"/>
+                        <constraint firstAttribute="height" constant="80" id="cp6-9v-ijK"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                            <real key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cEh-hj-Yuc" secondAttribute="trailing" id="2OO-f4-pXS"/>
                 <constraint firstItem="cEh-hj-Yuc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fe0-Tf-lFX"/>
-                <constraint firstItem="0m5-BI-2In" firstAttribute="top" secondItem="cEh-hj-Yuc" secondAttribute="bottom" constant="34" id="efU-lv-cfw"/>
+                <constraint firstAttribute="bottom" secondItem="cEh-hj-Yuc" secondAttribute="bottom" id="GM8-Cu-UJu"/>
                 <constraint firstItem="cEh-hj-Yuc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hRL-HQ-rNF"/>
                 <constraint firstItem="0m5-BI-2In" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uGw-0V-4PF"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0m5-BI-2In" secondAttribute="bottom" id="vrg-Dg-1ip"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0m5-BI-2In" secondAttribute="bottom" constant="30" id="vrg-Dg-1ip"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
